@@ -1,4 +1,5 @@
 public class Player {
+    public String prefix;
     private String name;
     private int health;
     // Constructor
@@ -13,6 +14,7 @@ public class Player {
     public int getHealth() { return health; }
     public void setHealth(int health) { this.health = health; }
     public void displayInfo() {
+        System.out.println("Prefix: " + prefix);
         System.out.println("Player Name: " + name);
         System.out.println("Player Health: " + health);
     }
